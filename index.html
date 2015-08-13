@@ -1,81 +1,183 @@
 <html>
-   <head>
-      <title>Vote2016.com</title>
-      <meta description="Compare and contrast the 2016 presidential candidates' policies.">
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <link rel="layout" type="text/javascript" href="js/layout.js">
-   </head>
-   <header class="header">
-      <nav class="navbar navbar-default navbar-static-top">
-         <div class="container">
-            <h1> Vote2016.com </h1>
-            <!--      <div class="dropdown">
-               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info<span class="caret"></span>
-               </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Contact Us</a></li>
-               </ul> -->
-            <!-- </div> -->
-         </div>
-      </nav>
-   </header>
-   <body>
-      <div class = "background"> </div>
-      <center class = "candidates">
-         <span class="imgWrap">
-            <a data-toggle="modal" data-target="#myModal"><img src="img/sanders.png" alt="polaroid"/></a>
-            <p class="imgDescription"><br>Bernie Sanders</p> <!--targets person to click-->
-         </span>
-         <div id="s_policy">Blah</div>
-         <span class="imgWrap">
-           <a data-toggle="modal" data-target="#myModal"><img src="img/hilary.png" alt="polaroid"/></a>
-            <p class="imgDescription"><br>Hillary Clinton</p>
-<!--             <img id="hilary" src="img/hilary.png" alt = "hilary"> -->
-            <p class="imgDescription"><br>Hillary Clinton</p>
-         </span>
-         <span class="imgWrap">
-            <img id="o'malle" src="img/o'malle.png" alt = "o'malle">
-            <p class="imgDescription"><br>Martin O'Malley</p>
-         </span>
-         <span class="imgWrap">
-            <img id="bush" src="img/bush.png" alt = "bush">
-            <p class="imgDescription"><br>Jeb <br> Bush</p>
-         </span>
-         <span class="imgWrap">
-            <img id="rubio" src="img/rubio.png" alt = "rubio">
-            <p class="imgDescription"><br>Marco Rubio</p>
-         </span>
-         <span class="imgWrap">
-            <img id="trump" src="img/trump.png" alt = "trump">
-            <p class="imgDescription"><br>Donald Trump</p>
-         </span>
-        
-         <!-- Modal -->
-         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                     ...
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                     <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-               </div>
+	<head>
+		<title>Vote2016.com</title>
+		<meta description="Compare and contrast the 2016 presidential candidates' policies.">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/layout.js"> </script>
+	</head>
+	<header class="header">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<h1> Vote2016.com </h1>
+				<!--      <div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					  <li><a href="#">About</a></li>
+					  <li><a href="#">Contact Us</a></li>
+					</ul> -->
+				<!-- </div> -->
+			</div>
+		</nav>
+	</header>
+	<body>
+		<!--   <div class = "inputs">	 -->
+		<center class="pCheck">
+			<label class="abortion">
+			<input type="radio" name="inlineRadioOptions" id="abortion" value="option1">Abortion
+			</label>
+			<!-- 			<div class="abortion">
+				<label>
+				<input type="radio" id ="abortion" value = "option 1">Abortion
+				</label>
+				</div> -->
+			<label class="education">
+			<input type="radio" name="inlineRadioOptions" id="education" value="option2">Education
+			</label>
+			<!-- 			<div class="education">
+				<label>
+				<input type="radio" value = "option 2">Education
+				</label>
+				</div> -->
+			<label class="immigration">
+			<input type="radio" name="inlineRadioOptions" id="immigration" value="option3">Immigration
+			</label>
+			<!-- 			<div class="immigration">
+				<label>
+				<input type="radio" value = "option 3">Immigration
+				</label>
+				</div> -->
+			<label class="gun">
+			<input type="radio" name="inlineRadioOptions" id="gun" value="option4">Gun Control
+			</label>
+			<!-- 			<div class="gun">
+				<label>
+				<input type="radio" value = "option 4">Gun Control
+				</label>
+				</div> -->
+			<label class="health">
+			<input type="radio" name="inlineRadioOptions" id="health" value="option5"> Health Care
+			</label>
+			<!-- 			<div class="healthcare">
+				<label>
+				<input type="radio" value = "option 5"> Health Care
+				</label>
+				</div> -->
+			<label class="gay">
+			<input type="radio" name="inlineRadioOptions" id="gay" value="option6"> Gay Marriage
+			</label>
+			<!-- 			<div class="gay" value = "option 6">
+				<label>
+				<input type="radio">Gay Marriage
+				</label>
+				</div> -->
+			<!--       <button type="submit" class="submit">Submit</button> -->
+			<button type="button" class="submit" data-toggle="modal" data-target="#MyModal">
+			Compare 
+			</button>
+		</center>
+		<div class = "background"> </div>
+		<center class = "candidates">
+			<span class="imgWrap">
+				<p class="imgDescription">Bernie Sanders <br> <br></p>
+				<img src="img/sanders.png" alt="polaroid"/>
+				<!--targets person to click-->
+			</span>
+			<div id="s_policy">Blah</div>
+			<span class="imgWrap">
+				<img id="clinton" src="img/hilary.png" alt = "clinton">
+				<p class="imgDescription">Hillary Clinton</p>
+			</span>
+			<span class="imgWrap">
+				<img id="o'malle" src="img/o'malle.png" alt = "o'malle">
+				<p class="imgDescription">Martin O'Malley</p>
+			</span>
+			<span class="imgWrap">
+				<img id="bush" src="img/bush.png" alt = "bush">
+				<p class="imgDescription">Jeb <br> Bush</p>
+			</span>
+			<span class="imgWrap">
+				<img id="rubio" src="img/rubio.png" alt = "rubio">
+				<p class="imgDescription">Marco Rubio</p>
+			</span>
+			<span class="imgWrap">
+				<img id="trump" src="img/trump.png" alt = "trump">
+				<p class="imgDescription">Donald Trump</p>
+			</span>
+			<form class="cCheck">
+				<div class="sanders">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+				<div class="clinton">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+				<div class="o'malley">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+				<div class="bush">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+				<div class="rubio">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+				<div class="trump">
+					<label>
+					<input type="checkbox">
+					</label>
+				</div>
+			</form>
+    </center>
+			<!-- Modal for text -->
+			<div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class = "abortion-title">Abortion</h4>
+              <h4 class = "education-title">Education</h4>
+              
+						</div>
+						<div class="abortion-body">
+							<!-- 							enter body text -->
+							<div id = "sandersAbort">Sanders (D): Pro-choice. <br> </div>
+							<div id = "clintonAbort">Clinton (D): Pro-chocie.<br> </div>
+							<div id = "omalleyAbort">O'Malley (D): Pro-choice.<br> </div>
+							<div id = "rubioAbort">Rubio (R): In 2013, Rubio co-sponsored a Senate bill to ban abortion after 20 weeks from fertilization, making exceptions for the life of the mother, incest, or rape.<br> </div>
+							<div id = "bushAbort">Bush (R): Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after 20 weeks from fertilization, making exceptions for the life of the mother, incest, or rape.<br> </div>
+              <div id = "trumpAbort">Trump (R): Trump opposes the common core. Regarding United States education in an international context, Trump has said, “We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are like third world countries. But we're becoming a third world country.”</div>
             </div>
-         </div>
-      </center>
-      <div id="footer">
-         <p>Alexandra Milich & Celia Heath </p>
-      </div>
-   </body>
+            
+            <div class = "education-body">
+              <div id = "sandersEdu"> Sanders (D): Sanders is in favor of providing free tuition at state colleges for two years. He would allow anyone who is currently paying of a student loan to refinance at a lower rate.</div>
+              <div id = "clintonEdu"> Clinton (D): Recently, Clinton proposed her sweepingly higher education plan - $350 billion which would go towards helping millions pay for college and reduce interest rates for those with student loans. </div>
+              <div id = "omalleyEdu"> O'Malley (D):  O’Malley encourages more public charter schools. He believes in providing parents, teachers, and students with the resources they need. Regarding student loans, O’Malley has said, “First, Congress must allow students to refinance the debt they have. Unlike homeowners or businesses, student borrowers can’t refinance their loans to take advantage of lower interest rates.” </div>
+              <div id = "rubioEdu"> Rubio (R):  Recently, Rubio called for a complete overhaul of the current higher-education system, claiming that “We need to change how we provide degrees, how those degrees are accessed, how much that access costs, how those costs are paid, and even how those payments are determined.” </div>
+              <div id = "bushEdu"> Bush (R): Bush supports the implementation of the Common Core, however is against using federal funds to motivate states to adopt the Common Core standards. While he believed that his brother’s signature education initiative, “No Child Left Behind”, is flawed, he was in favor of its reauthorization under the Obama administration.
+                <div id = "trumpEdu"> Trump (R): Trump opposes the common core. Regarding United States education in an international context, Trump has said, “We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are like third world countries. But we're becoming a third world country.” </div>
+              </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+        </div>
+    </div>
+		<div id="footer">
+			<p>Alexandra Milich & Celia Heath </p>
+		</div>
+	</body>
 </html>
