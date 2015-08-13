@@ -1,5 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:700);
 
+.imgWrap {
+  position: relative;
+  height: 100px;
+  width: 257px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: white; 
+  text-align: center;
+  font-family: 'Lora', serif;
+  
+  top: 45%; 
+  /*width: 100%; */
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* body{
     position: relative;
 } */
@@ -45,7 +74,7 @@ h1{
 } */
 
 img{
-  padding-top:290px;
+  padding-top:170px;
 }
 
 #s_name, #s_policy{
