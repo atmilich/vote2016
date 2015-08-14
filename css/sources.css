@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:700);
+
+
+body {
+     background: url("../img/backg.png") no-repeat center center fixed;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.info{
+  background-color: white;
+  border-style: solid;
+  border-color: navy;
+  border-width: 5px;
+  text-align: center;
+  width: 50%;
+  height: 48.5%;
+  position: absolute;
+  margin-left: 27.6%;
+  margin-top: -1%;
+  
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+h1{
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: navy;
+}

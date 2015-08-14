@@ -20,7 +20,7 @@ function hideTitles(){
     $('.' + titles[ii] + '-title').hide();
   }
 }
-
+  
 function setFalse(cells){
   for (out = 0; out < cells.length; out++) {   
      for (inner = 0; inner < cells[out].length; inner++) {

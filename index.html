@@ -9,21 +9,21 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script type="text/javascript" charset="utf-8" src="js/layout.js"> </script>
    </head>
-   <header class="header">
-      <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
-         <div class="container">
-            <h1> Vote2016.com </h1>
-            <!--      <div class="dropdown">
-               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info<span class="caret"></span>
-               </button>
-               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                 <li><a href="#">About</a></li>
-                 <li><a href="#">Contact Us</a></li>
-               </ul> -->
-            <!-- </div> -->
-         </div>
-      </nav>
-   </header>
+     <header class="header">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<h1> Vote2016.com </h1>
+        
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>   
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sources.html">Sources</a></li>  
+        </ul>
+			</div>
+		</nav>
+	</header>
+
    <body>
       <!--   <div class = "inputs">  -->
       <center class="pCheck">
@@ -77,7 +77,10 @@
             </div> -->
          <!--       <button type="submit" class="submit">Submit</button> -->
          <br>
-         <button id="comp" type="button" class="btn-default" data-toggle="modal" data-target="#MyModal">
+        <button id="instruct" class="btn-default" data-toggle="modal" data-target="#InstructModal">
+  Instructions
+</button>
+        <button id="comp" type="button" class="btn-default" data-toggle="modal" data-target="#MyModal">
          Compare 
          </button>
       </center>
@@ -142,6 +145,23 @@
             </div>
          </div>
       </center>
+<!--      Modal for instructions -->
+      <div class="modal fade" id="InstructModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Select the topic and candidates you wish to compare. Then click the "compare" button.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       <!-- Modal for text -->
       <div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
          <div class="modal-dialog" role="document">
@@ -207,7 +227,7 @@
                            Pro-choice.
                         </td>
                         <td class = "omalleyEducation">
-                           O’Malley encourages more public charter schools. He believes in providing parents, teachers, and students with the resources they need. Regarding student loans, O'Malley has said, "First, Congress must allow students to refinance the debt they have. Unlike homeowners or businesses, student borrowers can’t refinance their loans to take advantage of lower interest rates." 
+                           O'Malley encourages more public charter schools. He believes in providing parents, teachers, and students with the resources they need. Regarding student loans, O'Malley has said, "First, Congress must allow students to refinance the debt they have. Unlike homeowners or businesses, student borrowers can't refinance their loans to take advantage of lower interest rates." 
                         </td>
                         <td class = "omalleyImmigration">
                            O'Malley is in support of providing a path to legal status for undocumented immigrants. He is an advocate for the DREAM Act, which would grant legal status to undocumented Americans that were brought to the United States as children. As Governor in Maryland, he signed a bill which allows undocumented students in Maryland to pay in-state tuition rates.
@@ -223,6 +243,27 @@
                         </td>
                      </tr>
                      <tr>
+                        <th> Bush (R)</th>
+                        <td class = "bushAbort">
+                           Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after 20 weeks from fertilization, making exceptions for the life of the mother, incest, or rape.
+                        </td>
+                        <td class = "bushEducation">
+                           Bush supports the implementation of the Common Core, however is against using federal funds to motivate states to adopt the Common Core standards. While he believed that his brothe's signature education initiative, "No Child Left Behind", is flawed, he was in favor of its reauthorization under the Obama administration. 
+                        </td>
+                        <td class = "bushImmigration">
+                           Bush is in favor of creating an opportunity to gain legal status for those who are in the country illegally, but not a path to citizenship. Additionally, he has said that he wants to decrease the number of people who are allowed to immigrate into the country due to family reasons and increase the number based on their skills. 
+                        </td>
+                        <td class = "bushGun">
+                           Bush is in favor of expanding gun owners' rights, including concealed carry and "stand your ground," which allows Florida residents to use deadly force when threatened in public.
+                        </td>
+                        <td class = "bushHealth">
+                           Bush is fervently opposed to Obamacare. His alternative is more "market-oriented" and proposes that the government create a support system for those who have medical needs that are much beyond their means.
+                        </td>
+                        <td class = "bushGay">
+                           Bush is against same-sex marriage; however, he believes people should "respect" it.
+                        </td>
+                     </tr>
+                    <tr>
                         <th> Rubio (R)</th>
                         <td class = "rubioAbort">
                            In 2013, Rubio co-sponsored a Senate bill to ban abortion after 20 weeks from fertilization, making  exceptions for the life of the mother, incest, or rape.
@@ -244,30 +285,9 @@
                         </td>
                      </tr>
                      <tr>
-                        <th> Bush (R)</th>
-                        <td class = "bushAbort">
-                           Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after 20 weeks from fertilization, making exceptions for the life of the mother, incest, or rape.
-                        </td>
-                        <td class = "bushEducation">
-                           Bush supports the implementation of the Common Core, however is against using federal funds to motivate states to adopt the Common Core standards. While he believed that his brother’s signature education initiative, "No Child Left Behind", is flawed, he was in favor of its reauthorization under the Obama administration. 
-                        </td>
-                        <td class = "bushImmigration">
-                           Bush is in favor of creating an opportunity to gain legal status for those who are in the country illegally, but not a path to citizenship. Additionally, he has said that he wants to decrease the number of people who are allowed to immigrate into the country due to family reasons and increase the number based on their skills. 
-                        </td>
-                        <td class = "bushGun">
-                           Bush is in favor of expanding gun owners’ rights, including concealed carry and "stand your ground," which allows Florida residents to use deadly force when threatened in public.
-                        </td>
-                        <td class = "bushHealth">
-                           Bush is fervently opposed to Obamacare. His alternative is more "market-oriented" and proposes that the government create a support system for those who have medical needs that are much beyond their means.
-                        </td>
-                        <td class = "bushGay">
-                           Bush is against same-sex marriage; however, he believes people should "respect" it.
-                        </td>
-                     </tr>
-                     <tr>
                         <th> Trump (R)</th>
                         <td class = "trumpAbort">
-                           Trump’s beliefs regarding abortion have changed. Prior to 2011, Trump believed that abortion should be banned at some point in the pregnancy. However, in his book The America We Deserve, Trump describes himself as pro-life.
+                           Trump's beliefs regarding abortion have changed. Prior to 2011, Trump believed that abortion should be banned at some point in the pregnancy. However, in his book 'The America We Deserve,' Trump describes himself as pro-life.
                         </td>
                         <td class = "trumpEducation">
                            Trump opposes the common core. Regarding United States education in an international context, Trump has said, "We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are like third world countries. But we're becoming a third world country."  
@@ -293,7 +313,4 @@
          </div>
       </div>
    </body>
-   <footer>
-      <p>Alexandra Milich &amp; Celia Heath </p>
-   </footer>
 </html>
