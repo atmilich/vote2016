@@ -76,8 +76,8 @@
             </label>
             </div> -->
          <!--       <button type="submit" class="submit">Submit</button> -->
-        <br>
-        <button type="button" class="btn-default" data-toggle="modal" data-target="#MyModal">
+         <br>
+         <button id="comp" type="button" class="btn-default" data-toggle="modal" data-target="#MyModal">
          Compare 
          </button>
       </center>
@@ -109,38 +109,38 @@
             <img id="trump" src="img/trump.png" alt = "trump">
             <p class="imgDescription">Donald Trump</p>
          </span>
-         <form class="cCheck">
+         <div class="cCheck">
             <div class="sanders">
                <label>
-               <input type="checkbox">Sanders
+               <input id="sandersCheck" type="checkbox">Sanders
                </label>
             </div>
             <div class="clinton">
                <label>
-               <input type="checkbox">Clinton
+               <input id="clintonCheck" type="checkbox">Clinton
                </label>
             </div>
             <div class="o'malley">
                <label>
-               <input type="checkbox">O'Malley
+               <input id="omalleyCheck" type="checkbox">O'Malley
                </label>
             </div>
             <div class="bush">
                <label>
-               <input type="checkbox">Bush
+               <input id="bushCheck" type="checkbox">Bush
                </label>
             </div>
             <div class="rubio">
                <label>
-               <input type="checkbox">Rubio
+               <input id="rubioCheck" type="checkbox">Rubio
                </label>
             </div>
             <div class="trump">
                <label>
-               <input type="checkbox">Trump
+               <input id="trumpCheck" type="checkbox">Trump
                </label>
             </div>
-         </form>
+         </div>
       </center>
       <!-- Modal for text -->
       <div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -156,198 +156,144 @@
                   <h4 class = "gay-title">Gay Marriage</h4>
                </div>
                <div class="container-fluid">
-                  <table cellpadding="10" border="2">
-                       <col width="110px">
-                        <tr>
-                           <th> Sanders (D)</th>
-                           <td class = "sandersAbort">
-                              Pro-choice. 
-                           </td>
-                           <td class = "sandersEducation">
-                              Pro-choice. 
-                           </td>
-                           <td class = "sandersImmigration">
-                              Pro-choice. 
-                           </td>
-                           <td class = "sandersGun">
-                              Pro-choice. 
-                           </td>
-                           <td class = "sandersHealth">
-                              Pro-choice. 
-                           </td>
-                           <td class = "sandersGay">
-                              Pro-choice. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Clinton (D)</th>
-                           <td class = "clintonAbort">
-                              Pro-choice.
-                           </td>
-                           <td class = "clintonEducation">
-                              Pro-choice.
-                           </td>
-                           <td class = "clintonImmigration">
-                              Pro-choice.
-                           </td>
-                           <td class = "clintonGun">
-                              Pro-choice.
-                           </td>
-                           <td class = "clintonHealth">
-                              Pro-choice.
-                           </td>
-                           <td class = "clintonGay">
-                              Pro-choice.
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> O'Malley (D)</th>
-                           <td class = "omalleyAbort">
-                              Pro-choice.
-                           </td>
-                           <td class = "omalleyEducation">
-                              Pro-choice.
-                           </td>
-                           <td class = "omalleyImmigration">
-                              Pro-choice.
-                           </td>
-                           <td class = "omalleyGun">
-                              Pro-choice.
-                           </td>
-                           <td class = "omalleyHealth">
-                              Pro-choice.
-                           </td>
-                           <td class = "omalleyGay">
-                              Pro-choice. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Rubio (R)</th>
-                           <td class = "rubioAbort">
-                              In 2013, Rubio co-sponsored a Senate bill to ban abortion after 20 weeks from fertilization,   making  exceptions for the life of the mother, incest, or rape.
-                           </td>
-                           <td class = "rubioEducation">
-                              Pro-choice. 
-                           </td>
-                           <td class = "rubioImmigration">
-                              Pro-choice. 
-                           </td>
-                           <td class = "rubioGun">
-                              Pro-choice. 
-                           </td>
-                           <td class = "rubioHealth">
-                              Pro-choice. 
-                           </td>
-                           <td class = "rubioGay">
-                              Pro-choice. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Bush (R)</th>
-                           <td class = "bushAbort">
-                              <div >Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after  20  weeks from fertilization, making exceptions for the life of the mother, incest, or rape.<br> <br></div>
-                           </td>
-                           <td class = "bushEducation">
-                               Pro-choice. 
-                           </td>
-                           <td class = "bushImmigration">
-                              Pro-choice. 
-                           </td>
-                           <td class = "bushGun">
-                              Pro-choice. 
-                           </td>
-                           <td class = "bushHealth">
-                              Pro-choice. 
-                           </td>
-                           <td class = "bushGay">
-                              Pro-choice. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Trump (R)</th>
-                           <td class = "trumpAbort">
-                              <div >Trump opposes the common core. Regarding United States education in an international context,  Trump  has said, <br> We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are   like third  world countries. But we're becoming a third world country.<br> <br></div>
-                           </td>
-                           <td class = "trumpEducation">
-                              Pro-choice. 
-                           </td>
-                           <td class = "trumpImmigration">
-                              Pro-choice. 
-                           </td>
-                           <td class = "trumpGun">
-                              Pro-choice. 
-                           </td>
-                           <td class = "trumpHealth">
-                              Pro-choice. 
-                           </td>
-                           <td class = "trumpGay">
-                              Pro-choice. 
-                           </td>
-                        </tr>
-                     </table>
-                 <br>
-                 <br>
+                  <br>
+                  <table cellpadding="10" border="2" style="width:100%;">
+                     <col width="110px">
+                     <tr>
+                        <th> Sanders (D)</th>
+                        <td class = "sandersAbort">
+                           Pro-choice. 
+                        </td>
+                        <td class = "sandersEducation">
+                           Sanders is in favor of providing free tuition at state colleges for two years. He would allow anyone who is currently paying of a student loan to refinance at a lower rate. 
+                        </td>
+                        <td class = "sandersImmigration">
+                           A supporter of the senate immigration bill in 2013, Sanders generally agrees with President Obama that most of the undocumented immigrants currently in the United States should be given a path to citizenship. Additionally, he has supported President Obama's use of executive orders to waive some groups of immigrants, especially those who were brought to the United States as children. 
+                        </td>
+                        <td class = "sandersGun">
+                           Sanders has a mixed voting record regarding gun control. He voted against the pro-gun-control Brady Bill, asserting that it is individual states, not the federal government, that should be in charge of handling waiting periods for handguns. 
+                        </td>
+                        <td class = "sandersHealth">
+                           While Sanders voted for the Affordable Care Act, he does not believe that the new health care law went far enough; he supports a single-payer system in which health care would be provided to all americans by the federal and state governments. 
+                        </td>
+                        <td class = "sandersGay">
+                           Sanders has been an avid same-sex marriage advocate for nearly 40 years. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <th> Clinton (D)</th>
+                        <td class = "clintonAbort">
+                           Pro-choice.
+                        </td>
+                        <td class = "clintonEducation">
+                           Recently, Clinton proposed her sweepingly higher education plan - $350 billion which would go towards helping millions pay for college and reduce interest rates for those with student loans.
+                        </td>
+                        <td class = "clintonImmigration">
+                           Clinton advocates for the use of executive powers to waive deportation for some immigrants. She is also in support of providing a path to legal status for undocumented immigrants.
+                        </td>
+                        <td class = "clintonGun">
+                           Clinton is a strong supporter of gun control. Her stance on the issue is one of the issues in which she is more "left-leaning" than fellow-candidate Sanders. 
+                        </td>
+                        <td class = "clintonHealth">
+                           Clinton is an avid supporter of the Affordable Care Act; however, she acknowledges that it is not perfect and believes it should be improved upon wherever possible. 
+                        </td>
+                        <td class = "clintonGay">
+                           Clinton supports marriage equality; however, she has acknowledged that this has not always been her stance on the issue. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <th> O'Malley (D)</th>
+                        <td class = "omalleyAbort">
+                           Pro-choice.
+                        </td>
+                        <td class = "omalleyEducation">
+                           O’Malley encourages more public charter schools. He believes in providing parents, teachers, and students with the resources they need. Regarding student loans, O'Malley has said, "First, Congress must allow students to refinance the debt they have. Unlike homeowners or businesses, student borrowers can’t refinance their loans to take advantage of lower interest rates." 
+                        </td>
+                        <td class = "omalleyImmigration">
+                           O'Malley is in support of providing a path to legal status for undocumented immigrants. He is an advocate for the DREAM Act, which would grant legal status to undocumented Americans that were brought to the United States as children. As Governor in Maryland, he signed a bill which allows undocumented students in Maryland to pay in-state tuition rates.
+                        </td>
+                        <td class = "omalleyGun">
+                           O'Malley is a strong supporter of increased gun control and critic of the National Rifle Association. He pushes for bans on dozens of assault weapons, in addition to requiring anyone purchasing a handgun to enter a fingerprint database.
+                        </td>
+                        <td class = "omalleyHealth">
+                           O'Malley believes health care should be a right, not a privilege. He is an advocate for Obamacare.
+                        </td>
+                        <td class = "omalleyGay">
+                           O'Malley supports same-sex marriage. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <th> Rubio (R)</th>
+                        <td class = "rubioAbort">
+                           In 2013, Rubio co-sponsored a Senate bill to ban abortion after 20 weeks from fertilization, making  exceptions for the life of the mother, incest, or rape.
+                        </td>
+                        <td class = "rubioEducation">
+                           Recently, Rubio called for a complete overhaul of the current higher-education system, claiming that "We need to change how we provide degrees, how those degrees are accessed, how much that access costs, how those costs are paid, and even how those payments are determined." 
+                        </td>
+                        <td class = "rubioImmigration">
+                           In 2013, Rubio was one of eight who drafted and pushed a "comprehensive immigration bill" through the Senate, which set up criteria and a path to citizenship for undocumented immigrants and increased the size of border control. However, now, Rubio is pushing for separate bills to first stop the further flow of illegal immigration and second address those who are currently in the country. 
+                        </td>
+                        <td class = "rubioGun">
+                           Rubio is against increasing gun control; he believes in defending second-amendment rights. 
+                        </td>
+                        <td class = "rubioHealth">
+                           Rubio strongly opposes Affordable Care Act and wants to repeal it. His alternative proposal "calls for new tax credits to help people purchase insurance, revising health insurance regulations and reforming Medicare and Medicaid".
+                        </td>
+                        <td class = "rubioGay">
+                           Although Rubio believes that marriage should be solely between a man and a woman and thus disagreed with the Supreme Court decision, he agrees that Americans must abide by the rule. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <th> Bush (R)</th>
+                        <td class = "bushAbort">
+                           Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after 20 weeks from fertilization, making exceptions for the life of the mother, incest, or rape.
+                        </td>
+                        <td class = "bushEducation">
+                           Bush supports the implementation of the Common Core, however is against using federal funds to motivate states to adopt the Common Core standards. While he believed that his brother’s signature education initiative, "No Child Left Behind", is flawed, he was in favor of its reauthorization under the Obama administration. 
+                        </td>
+                        <td class = "bushImmigration">
+                           Bush is in favor of creating an opportunity to gain legal status for those who are in the country illegally, but not a path to citizenship. Additionally, he has said that he wants to decrease the number of people who are allowed to immigrate into the country due to family reasons and increase the number based on their skills. 
+                        </td>
+                        <td class = "bushGun">
+                           Bush is in favor of expanding gun owners’ rights, including concealed carry and "stand your ground," which allows Florida residents to use deadly force when threatened in public.
+                        </td>
+                        <td class = "bushHealth">
+                           Bush is fervently opposed to Obamacare. His alternative is more "market-oriented" and proposes that the government create a support system for those who have medical needs that are much beyond their means.
+                        </td>
+                        <td class = "bushGay">
+                           Bush is against same-sex marriage; however, he believes people should "respect" it.
+                        </td>
+                     </tr>
+                     <tr>
+                        <th> Trump (R)</th>
+                        <td class = "trumpAbort">
+                           Trump’s beliefs regarding abortion have changed. Prior to 2011, Trump believed that abortion should be banned at some point in the pregnancy. However, in his book The America We Deserve, Trump describes himself as pro-life.
+                        </td>
+                        <td class = "trumpEducation">
+                           Trump opposes the common core. Regarding United States education in an international context, Trump has said, "We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are like third world countries. But we're becoming a third world country."  
+                        </td>
+                        <td class = "trumpImmigration">
+                           In January, Trump called for the securing of Southern borders, indicating that he believes half of the undocumented workers in the United States. are criminals. He is against any path to citizenship for illegal immigrants; however, he supports the expansion of legal immigration from Europe. Additionally, Trump would grant a legal status to those who complete a degree at an American University. 
+                        </td>
+                        <td class = "trumpGun">
+                           Trump has described himself as a "very strong person on the Second Amendment," and thus is in favor of limiting restrictions on guns; however, he has written that he supports a ban on some assault weapons and a slightly longer waiting period to buy guns.
+                        </td>
+                        <td class = "trumpHealth">
+                           Trump is fervently opposed to Obamacare and believes it should be repealed and replaced. In The America We Deserve, Trump wrote that he supported universal healthcare and a system similar to Canada’s government-run healthcare program.
+                        </td>
+                        <td class = "trumpGay">
+                           Trump believes that marriage should be solely between a man and a woman. He sees it as a state issue.
+                        </td>
+                     </tr>
+                  </table>
+                  <br>
+                  <br>
                </div>
-               <!-- <div class="abortion-body">
-                  <div class="container-fluid">
-                     <table cellpadding="10" border="2">
-                       <col width="110px">
-                        <tr>
-                           <th> Sanders (D)</th>
-                           <td>
-                              <div id = "sandersAbort">Pro-choice. <br> <br></div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Clinton (D)</th>
-                           <td>
-                              <div id = "clintonAbort">Pro-chocie.<br> <br></div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> O'Malley (D)</th>
-                           <td>
-                              <div id = "omalleyAbort">Pro-choice.<br> <br></div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Rubio (R)</th>
-                           <td>
-                              <div id = "rubioAbort">In 2013, Rubio co-sponsored a Senate bill to ban abortion after 20 weeks from fertilization,   making  exceptions for the life of the mother, incest, or rape.<br> <br></div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Bush (R)</th>
-                           <td>
-                              <div id = "bushAbort">Bush is in support of the Pain-Capable Unborn Child Protection Act, which would ban abortion after  20  weeks from fertilization, making exceptions for the life of the mother, incest, or rape.<br> <br></div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <th> Trump (R)</th>
-                           <td>
-                              <div id = "trumpAbort">Trump opposes the common core. Regarding United States education in an international context,  Trump  has said, <br> We're twenty-sixth in the world. Twenty-five countries are better than us at education. And some of them are   like third  world countries. But we're becoming a third world country.<br> <br></div>
-                           </td>
-                        </tr>
-                     </table>
-                    <br>
-                  </div>
-               </div> -->
-               <!-- <div class = "education-body">
-                  <div id = "sandersEdu"> Sanders (D): Sanders is in favor of providing free tuition at state colleges for two years. He would allow anyone who is currently paying of a student loan to refinance at a lower rate.<br><br></div>
-                  <div id = "clintonEdu"> Clinton (D): Recently, Clinton proposed her sweepingly higher education plan - $350 billion which would go towards helping millions pay for college and reduce interest rates for those with student loans.<br><br> </div>
-                  <div id = "omalleyEdu"> O'Malley (D):  O'Malley encourages more public charter schools. He believes in providing parents, teachers, and students with the resources they need. Regarding student loans, he has said, <br>First, Congress must allow students to refinance the debt they have. Unlike homeowners or businesses, student borrowers cannot refinance their loans to take advantage of lower interest rates.<br> <br></div>
-                  <div id = "rubioEdu"> Rubio (R):  Recently, Rubio called for a complete overhaul of the current higher-education system, claiming that <br>We need to change how we provide degrees, how those degrees are accessed, how much that access costs, how those costs are paid, and even how those payments are determined.<br><br> </div>
-                  <div id = "bushEdu"> Bush (R): Bush supports the implementation of the Common Core, however is against using federal funds to motivate states to adopt the Common Core standards. While he believed that his brother's signature education initiative, <br>No Child Left Behind,<br> is flawed, he was in favor of its reauthorization under the Obama administration.<br><br>
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-               </div> -->
             </div>
          </div>
       </div>
    </body>
-  <footer>
+   <footer>
       <p>Alexandra Milich &amp; Celia Heath </p>
-  </footer>
+   </footer>
 </html>
