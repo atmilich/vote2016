@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:700);
 
+td,th { 
+    padding: 5px;
+}
+
 .imgWrap {
   position: relative;
   height: 100px;
@@ -12,14 +16,15 @@
 }
 
 .pCheck {
-/*   padding-right: 50px; */
-  font-size:100%;
+  font-size:120%;
   position: relative;
   font-family: 'Lora', serif;
- padding-top: 320px; 
-  padding-left:50px; 
-/*   margin-left: 70px; */
+ padding-top: 420px; 
+  padding-left:530px; 
+  margin-left: 70px;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: -1px;
 }
 
 .submit{
@@ -90,9 +95,9 @@ h1{
   text-align: center;
   font-weight: bold;
   font-size: 150%;
-  color: black;
   position: absolute;
-  bottom: 0;
+  font-family: 'Lora', serif;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
@@ -101,8 +106,9 @@ h1{
 .cCheck div{
 /*   margin-top: 315px; */
 /*   margin-left: 50px; */
+  font-family: 'Lora', serif;
   display: inline-block;
-/*   margin-left: 140px; */
+  margin-left: 45px;
   padding-right: 50px;
 }
 
@@ -120,11 +126,11 @@ img{
   margin-right: 30px;
 } */
 
-p#abortion {
+#abortion-body {
   display: none;
 }
 
-p#education{
+#education-body{
   display: none;
 }
 
@@ -137,6 +143,12 @@ h4{
 }
 .modal-body div{
   display: none;
+}
+
+footer{
+  font-family: 'Lora', serif;
+  font-size: 170%;
+  text-align: center;
 }
 
 /* //dropdown button */
